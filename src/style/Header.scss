@@ -1,0 +1,56 @@
+body {
+  background-color: #747474;
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  background-color: #747474;
+  .header {
+    position: relative;
+    height: 220px;
+    background-image: linear-gradient(#ff9d2f, #ff6126);
+  }
+
+  .header-title {
+    padding: 100px 0;
+    font: 40px 'Anton';
+    text-align: center;
+    margin-left: 30px;
+
+    @media screen and (max-width: 500px) {
+      margin-left: 30vw;
+    }
+
+    @media screen and (maw-width: 600px) {
+      margin-left: 40vw;
+    }
+  }
+  h1 {
+    padding: 100px 0;
+    font: 44px 'Arial';
+    text-align: center;
+    @media screen and (maw-width: 600px) {
+      margin-left: 40vw;
+    }
+  }
+  header h1 {
+    color: white;
+  }
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+  }
+  @media (max-width: 699px) {
+    .svg--lg {
+      display: none;
+    }
+  }
+  @media (min-width: 700px) {
+    .svg--sm {
+      display: none;
+    }
+  }
+}

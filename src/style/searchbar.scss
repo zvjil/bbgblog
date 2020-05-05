@@ -1,0 +1,95 @@
+.search-bar {
+  margin-left: 0px;
+  margin-top: 10px;
+  width: 350px;
+  height: 25px;
+  border-radius: 15px;
+  border-color: #14a76c;
+}
+
+.sui-layout-body:after {
+  content: '';
+  height: 0px !important;
+  width: 100%;
+  display: block;
+  position: relative;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fcfcfc),
+    to(#ffffff)
+  );
+  background: linear-gradient(to bottom, #fcfcfc 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ffffff',GradientType=0 );
+}
+
+@media (max-width: 1600px) {
+  .sui-layout-body__inner {
+    display: block;
+    padding: 0 15px;
+  }
+}
+
+.sui-layout-body__inner {
+  display: block;
+  padding: 0 15px;
+  background-color: #747474;
+  color: #747474;
+}
+
+.sui-layout-body {
+  background: #747474;
+}
+
+input.sui-search-box__submit {
+  flex-shrink: 0;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 16px;
+  margin-left: 10px;
+  text-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px;
+  color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset,
+    rgba(59, 69, 79, 0.05) 0px 1px 0px;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#14a76c),
+      to(#ff652f)
+    )
+    #ffe400;
+  background: linear-gradient(#14a76c, #ff652f) #ffe400;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 1px inset,
+        rgba(59, 69, 79, 0.3) 0px 2px 4px;
+      background: linear-gradient(rgb(255, 228, 0), rgb(255, 101, 47))
+        rgb(20, 167, 108);
+    }
+  }
+}
+
+.sui-result {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  list-style: none;
+  padding: 24px 0;
+  text-decoration: none;
+  display: block;
+  border: 1px solid #f0f0f0;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  color: black;
+}

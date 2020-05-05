@@ -1,0 +1,57 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: 4px #14a76c;
+  border-radius: 7px; /* 5px rounded corners */
+  width: 212px;
+  height: 312px;
+  background-color: #ffe400;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containter {
+  padding: 2px 14px;
+}
+
+.back-card-title {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #ff652f;
+}
+
+.back-flip-button {
+  width: 225px;
+  height: 325px;
+  margin-left: -390px;
+
+  border-style: double;
+  border-color: #14a76c;
+  border-width: 7px;
+  border-radius: 10px;
+
+  @media screen and (max-width: 544px) and (min-width: 500px) {
+    margin-left: -74vw;
+  }
+}
+
+.blog-link {
+  text-decoration: none;
+  margin-top: 100px;
+  margin-left: -160px;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #ff652f;
+}
+
+.blog-img {
+  width: 175px;
+  margin-top: -185px;
+  margin-left: -30px;
+}
