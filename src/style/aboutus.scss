@@ -1,0 +1,28 @@
+.secondary-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 38px;
+  font-family: 'Anton', sans-serif;
+  // margin-left: -45px;
+  -webkit-text-fill-color: #ff652f;
+  -webkit-text-stroke-width: 0.001px;
+  -webkit-text-stroke-color: #ffe400;
+  text-transform: capitalize;
+  text-decoration: underline #272727;
+  margin-top: 50px;
+  z-index: 0;
+}
+
+.aboutusparagragh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+  margin-left: 100px;
+  width: 75vw;
+}
