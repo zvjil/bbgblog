@@ -10,6 +10,8 @@ const connector = new AppSearchAPIConnector ({
   searchKey: 'private-xo9cn3v8nkp2ct43s853qf9t',
   engineName: 'bullybgone',
   hostIdentifier: 'host-175vbc',
+  endpointBase: 'https://e2ee1343825c4474ba20ad1ef357441a.app-search.eastus2.azure.elastic-cloud.com',
+  resultFields: ['description', 'title', 'nps_link', 'id'],
 });
 
 export default function App () {
