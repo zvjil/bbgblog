@@ -30,16 +30,17 @@ class SocialLogin extends Component {
       };
     }
     const auth2 = gapi.auth2.getAuthInstance ();
-    if (type === auth2.isSignedIn.get ()) {
+    if (type === 'google' && auth2.isSignedIn.get ()) {
       var profile = auth2.currentUser.get ().getBasicProfile ();
-      console.log ('ID: ' + profile.getId ());
-      console.log ('Full Name: ' + profile.getName ());
-      console.log ('Given Name: ' + profile.getGivenName ());
-      console.log ('Family Name: ' + profile.getFamilyName ());
-      console.log ('Image URL: ' + profile.getImageUrl ());
-      console.log ('Email: ' + profile.getEmail ());
+      postData = {
+        ID: profile.getId (),
+        FullName: profile.getName (),
+        GivenName: profile.getGivenName (),
+        FamilyName: profile.getFamilyName (),
+        ImageURL: profile.getImageUrl (),
+        Email: profile.getEmail (),
+      };
     }
-
     if (postData) {
       PostData ('signup', postData).then (result => {
         let responseJson = result;
