@@ -7,9 +7,9 @@ import '@elastic/react-search-ui-views/lib/styles/styles.css';
 import '../../style/blog-detail-styles.scss';
 
 const connector = new AppSearchAPIConnector ({
-  searchKey: 'private-v9n4ozacnir49w1mhnqt67qa',
-  engineName: 'bully-b-gone',
-  hostIdentifier: 'host-sa9iod',
+  searchKey: 'private-xo9cn3v8nkp2ct43s853qf9t',
+  engineName: 'bullybgone',
+  hostIdentifier: 'host-175vbc',
 });
 
 export default function App () {
@@ -23,7 +23,12 @@ export default function App () {
         <Layout
           header={<SearchBox autocompleteSuggestions={true} />}
           bodyContent={
-            <Results titleField="title" description="description" id="id" />
+            <Results
+              titleField="title"
+              description="description"
+              id="id"
+              nps_link="nps_link"
+            />
           }
         />
       </div>

@@ -6,7 +6,6 @@ import {Redirect} from 'react-router-dom';
 import teenwelcome from '../../components/Images/teenwelcome.jpg';
 import Header from '../Headerbbg/Header';
 import '../../style/socialLogin-styles.scss';
-import Home from '../HomeBbg/home';
 
 class SocialLogin extends Component {
   constructor (props) {
@@ -30,16 +29,15 @@ class SocialLogin extends Component {
         provider_pic: res.picture.data.url,
       };
     }
-
-    if (type === 'google' && res.w3.U3) {
-      postData = {
-        name: res.w3.ig,
-        provider: type,
-        email: res.w3.U3,
-        provider_id: res.El,
-        token: res.Zi.access_token,
-        provider_pic: res.w3.Paa,
-      };
+    const auth2 = gapi.auth2.getAuthInstance ();
+    if (type === auth2.isSignedIn.get ()) {
+      var profile = auth2.currentUser.get ().getBasicProfile ();
+      console.log ('ID: ' + profile.getId ());
+      console.log ('Full Name: ' + profile.getName ());
+      console.log ('Given Name: ' + profile.getGivenName ());
+      console.log ('Family Name: ' + profile.getFamilyName ());
+      console.log ('Image URL: ' + profile.getImageUrl ());
+      console.log ('Email: ' + profile.getEmail ());
     }
 
     if (postData) {
@@ -51,7 +49,6 @@ class SocialLogin extends Component {
     } else {
     }
   }
-
   render () {
     if (this.state.redirect || sessionStorage.getItem ('userData')) {
       return <Redirect to={'/'} />;
