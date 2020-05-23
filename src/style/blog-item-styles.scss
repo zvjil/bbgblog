@@ -11,6 +11,24 @@
   text-decoration: underline #272727;
   margin-top: -10px;
   margin-left: -625px;
+
+  @media (max-width: 480px) and (min-width: 400px) {
+    width: 90vw;
+    margin-left: -670px;
+    font-size: 28px;
+  }
+
+  @media (max-width: 360px) and (min-width: 321px) {
+    width: 90vw;
+    margin-left: -620px;
+    font-size: 26px;
+  }
+
+  @media (max-width: 320px) and (min-width: 300px) {
+    width: 90vw;
+    margin-left: -610px;
+    font-size: 26px;
+  }
 }
 
 .blogDescription {
@@ -24,4 +42,22 @@
   margin-left: -625px;
   margin-top: 10px;
   line-height: 20px;
+
+  @media (max-width: 480px) and (min-width: 400px) {
+    width: 87vw;
+    margin-left: -670px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 360px) and (min-width: 321px) {
+    width: 70vw;
+    margin-left: -620px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 320px) and (min-width: 300px) {
+    width: 70vw;
+    margin-left: -610px;
+    font-size: 14px;
+  }
 }

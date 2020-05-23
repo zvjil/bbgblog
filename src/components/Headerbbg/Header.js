@@ -9,6 +9,7 @@ class Header extends Component {
         <div className="header">
           <h1 className="header-title">Bully-B-Gone Blog</h1>
           <svg
+            className="header-svg"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"

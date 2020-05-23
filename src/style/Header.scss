@@ -6,10 +6,24 @@ body {
   width: 100vw;
   height: 100%;
   background-color: #747474;
+
   .header {
     position: relative;
-    height: 220px;
+    height: 230px;
+    width: 100vw;
     background-image: linear-gradient(#ff9d2f, #ff6126);
+
+    @media (max-width: 360px) and (min-width: 321px) {
+      width: 111vw;
+    }
+
+    @media (max-width: 320px) and (min-width: 300px) {
+      width: 110vw;
+    }
+
+    @media (max-width: 480px) and (min-width: 400px) {
+      width: 140vw;
+    }
   }
 
   .header-title {
@@ -22,8 +36,25 @@ body {
       margin-left: 30vw;
     }
 
-    @media screen and (maw-width: 600px) {
+    @media screen and (max-width: 600px) {
       margin-left: 40vw;
+    }
+    @media (max-width: 320px) and (min-width: 300px) {
+      width: 100vw;
+      font-size: 26px;
+      margin-left: 25px;
+    }
+
+    @media (max-width: 360px) and (min-width: 321px) {
+      width: 100vw;
+      font-size: 32px;
+      margin-left: 5px;
+    }
+
+    @media (max-width: 480px) and (min-width: 400px) {
+      width: 100vw;
+      margin-left: 90px;
+      font-size: 38px;
     }
   }
   h1 {
@@ -37,20 +68,52 @@ body {
   header h1 {
     color: white;
   }
-  svg {
+  .header-svg {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
+
+    @media (max-width: 320px) and (min-width: 300px) {
+      //
+      // width: 100vw;
+      .svg-lg {
+        width: 90vw;
+      }
+      .svg-sm {
+        width: 90vw;
+      }
+    }
+
+    @media (max-width: 360px) and (min-width: 321px) {
+      // width: 100vw;
+      .svg-lg {
+        width: 90vw;
+      }
+      .svg-sm {
+        width: 90vw;
+      }
+    }
+
+    @media (max-width: 480px) and (min-width: 400px) {
+      .svg-lg {
+        width: 80vw;
+      }
+      .svg-sm {
+        width: 80vw;
+      }
+    }
   }
   @media (max-width: 699px) {
     .svg--lg {
-      display: none;
+      // display: none;
+      width: 100vw;
     }
   }
   @media (min-width: 700px) {
     .svg--sm {
-      display: none;
+      // display: none;
+      width: 100vw;
     }
   }
 }

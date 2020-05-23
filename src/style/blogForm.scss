@@ -1,17 +1,147 @@
 @import './mixins.scss';
+.ReactModal__Content.ReactModal__Content --after-open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+
+  @media (max-width: 360px) and (min-width: 321px) {
+    width: 50vw;
+  }
+
+  @media (max-width: 320px) and (min-width: 300px) {
+    width: 50vw;
+  }
+}
 
 .blog-form-wrapper {
   @include base-grid();
   grid-template-columns: 1fr;
   padding: 45px;
   background-color: white;
-  width: 650px;
+  width: 90vw;
   height: 525px;
   margin-top: 30px;
+
+  @media (max-width: 480px) and (min-width: 400px) {
+    width: 110vw;
+  }
+  @media (max-width: 360px) and (min-width: 321px) {
+    width: 100vw;
+  }
+
+  @media (max-width: 320px) and (min-width: 300px) {
+    width: 100vw;
+  }
 
   @include input-element();
   input {
     margin-bottom: 30px;
+
+    @media (max-width: 480px) and (min-width: 400px) {
+      width: 375px;
+    }
+
+    @media (max-width: 360px) and (min-width: 321px) {
+      width: 325px;
+      margin-left: -15px;
+    }
+
+    // @media (max-width: 320px) and (min-width: 300px) {
+    //   width: 300px;
+    //   margin-left: -12px;
+    //   word-wrap: none;
+    // }
+  }
+
+  .blog-title-input input {
+    @media (max-width: 320px) and (min-width: 300px) {
+      width: 250px;
+      margin-left: 15px;
+      word-wrap: none;
+    }
+  }
+
+  .blog-status-input input {
+    @media (max-width: 320px) and (min-width: 300px) {
+      width: 250px;
+      margin-left: 15px;
+      word-wrap: none;
+    }
+  }
+
+  .rdw-editor-toolbar {
+    padding: 6px 5px 0;
+    border-radius: 2px;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: flex-start;
+    background: white;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-bottom: 5px;
+    user-select: none;
+    width: 60vw;
+    margin-left: -30px;
+
+    @media (max-width: 480px) and (min-width: 400px) {
+      width: 400px;
+    }
+
+    @media (max-width: 360px) and (min-width: 321px) {
+      width: 325px;
+      margin-left: -20px;
+    }
+
+    @media (max-width: 320px) and (min-width: 300px) {
+      width: 300px;
+      margin-left: -20px;
+    }
+  }
+
+  .DraftEditor-root {
+    @media (max-width: 480px) and (min-width: 400px) {
+      margin-left: 5px;
+      width: 350px;
+      border: 2px solid teal;
+    }
+
+    @media (max-width: 360px) and (min-width: 321px) {
+      width: 290px;
+      margin-left: 5px;
+      border: 2px solid teal;
+    }
+
+    @media (max-width: 320px) and (min-width: 300px) {
+      width: 270px;
+      margin-left: 5px;
+      border: 2px solid teal;
+    }
+  }
+
+  .dropzone.dz-clickable {
+    @media (max-width: 480px) and (min-width: 400px) {
+      width: 125px;
+    }
+
+    @media (max-width: 360px) and (min-width: 321px) {
+      width: 125px;
+    }
+
+    @media (max-width: 320px) and (min-width: 300px) {
+      width: 125px;
+      margin-left: 10px;
+    }
   }
 
   .save-button {
@@ -27,6 +157,22 @@
     transition: all 0.5s ease-in-out;
     background-color: #14a76c;
     color: white;
+
+    @media (max-width: 480px) and (min-width: 400px) {
+      margin-left: -60px;
+      width: 100vw;
+    }
+
+    @media (max-width: 360px) and (min-width: 300px) {
+      margin-left: -60px;
+      width: 108vw;
+      margin-top: 27px;
+    }
+
+    @media (max-width: 320px) and (min-width: 300px) {
+      width: 112vw;
+      margin-left: -60px;
+    }
 
     &:hover {
       color: #ffe400;
@@ -52,6 +198,10 @@
           font-weight: 900;
           color: red;
           cursor: pointer;
+
+          @media (max-width: 360px) and (min-width: 300px) {
+            margin-left: 222px;
+          }
         }
       }
     }

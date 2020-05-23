@@ -1,3 +1,13 @@
+.header-title {
+  padding: 100px 0;
+  font: 40px 'Anton';
+  text-align: center;
+  margin-left: 30px;
+
+  @media (max-width: 360px) and (min-width: 321px) {
+    margin-left: -10px;
+  }
+}
 .blog-submit {
   width: 300px;
 }
@@ -15,6 +25,11 @@
   text-transform: capitalize;
   text-decoration: underline #272727;
   margin-top: 25px;
+
+  @media (max-width: 360px) and (min-width: 321px) {
+    width: 100vw;
+    font-size: 28px;
+  }
 }
 
 .directions {
@@ -26,6 +41,18 @@
   font-size: 16px;
   color: white;
   margin-left: 25px;
+
+  @media (max-width: 320px) and (min-width: 300px) {
+    width: 80vw;
+    font-size: 18px;
+    margin-left: 40px;
+  }
+
+  @media (max-width: 360px) and (min-width: 321px) {
+    width: 80vw;
+    font-size: 20px;
+    margin-left: 35px;
+  }
 }
 
 .rulestitle {

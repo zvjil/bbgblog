@@ -5,6 +5,10 @@
   height: 25px;
   border-radius: 15px;
   border-color: #14a76c;
+
+  @media (max-width: 360px) and (min-width: 321px) {
+    margin-left: -27px;
+  }
 }
 
 .sui-layout-body:after {

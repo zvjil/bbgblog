@@ -39,6 +39,21 @@
   @media screen and (max-width: 544px) and (min-width: 500px) {
     margin-left: -74vw;
   }
+
+  @media (max-width: 480px) and (min-width: 400px) {
+    margin-bottom: 450px;
+    margin-left: -255px;
+  }
+
+  @media (max-width: 360px) and (min-width: 321px) {
+    margin-bottom: 445px;
+    margin-left: -255px;
+  }
+
+  @media (max-width: 320px) and (min-width: 300px) {
+    margin-bottom: 650px;
+    margin-left: -255px;
+  }
 }
 
 .blog-link {

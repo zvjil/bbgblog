@@ -6,6 +6,7 @@ import {Redirect} from 'react-router-dom';
 import teenwelcome from '../../components/Images/teenwelcome.jpg';
 import Header from '../Headerbbg/Header';
 import '../../style/socialLogin-styles.scss';
+import gbutton from '../../../static/assets/images/btn_google_signin_dark.png';
 
 class SocialLogin extends Component {
   constructor (props) {
@@ -90,13 +91,14 @@ class SocialLogin extends Component {
           />
         </div>
 
-        <div className="gbutton">
+        <div className="g-signin2">
           <GoogleLogin
             clientId="403191765550-duk7c1do3705dlj8i6dnsr27oe7rlaq3.apps.googleusercontent.com"
-            buttonText="Login with Google"
             onSuccess={responseGoogle}
             onFailure={responseGoogle}
+            theme="dark"
           />
+
         </div>
       </div>
     );
