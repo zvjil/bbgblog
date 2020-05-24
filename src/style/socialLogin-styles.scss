@@ -93,7 +93,7 @@
 
 .align {
   margin-left: 75vw;
-  border-top: #abb9b4 5px solid;
+  border-top: #14a76c 5px solid;
   border-bottom: #14a76c 5px solid;
   border-left: #14a76c 5px solid;
   border-right: #14a76c 5px solid;
@@ -113,7 +113,7 @@
   }
 
   @media screen and (max-width: 799px) and (min-width: 600px) {
-    margin-left: 35vw;
+    margin-left: 32vw;
   }
 
   @media screen and (max-width: 599px) and (min-width: 500px) {
@@ -151,6 +151,24 @@ img:hover {
   width: 360px;
   margin-top: 35px;
   margin-left: 40vw;
+
+  @media (max-width: 750px) and (min-width: 700px) {
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #4c69ba;
+    border: calc(0.06887vw + 0.67769px) solid #4c69ba;
+    padding: 0;
+    margin-left: 275px;
+    width: 31vw;
+  }
 
   @media screen and (max-width: 500px) {
     margin-left: 30vw;
@@ -235,6 +253,13 @@ img:hover {
 
   @media (max-width: 480px) and (min-width: 400px) {
     margin-left: 140px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    width: 70vw;
+  }
+
+  @media (max-width: 750px) and (min-width: 700px) {
+    margin-left: 290px;
     font-weight: 900;
     margin-bottom: 20px;
     width: 70vw;

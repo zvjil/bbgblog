@@ -158,7 +158,7 @@ class Blog extends Component {
 
         {this.props.loggedInStatus === 'LOGGED_IN'
           ? <div className="new-blog-link">
-              <a onClick={this.handleNewBlogClick}>
+              <a className="blog-link" onClick={this.handleNewBlogClick}>
                 <FontAwesomeIcon icon="plus-circle" />
               </a>
             </div>
