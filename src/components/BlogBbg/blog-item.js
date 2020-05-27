@@ -17,7 +17,7 @@ const BlogItem = props => {
       <div className="blogDescription">
         <Truncate
           lines={5}
-          ellipsis={<Link to={`/b/${id}`}>...Read more</Link>}
+          ellipsis={<Link id="read-more" to={`/b/${id}`}>...Read more</Link>}
         >
           {striptags (content)}
 

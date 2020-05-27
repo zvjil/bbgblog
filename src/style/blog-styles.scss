@@ -2,6 +2,17 @@ body {
   background-color: #747474;
 }
 
+#read-more {
+  @media (max-width: 600px) and (min-width: 500px) {
+    width: 5vw;
+    margin-left: -3px;
+  }
+  @media (max-width: 480px) and (min-width: 400px) {
+    width: 5vw;
+    margin-left: -3px;
+  }
+}
+
 #delete {
   display: inline-block;
   width: 50px;
@@ -36,12 +47,14 @@ body {
 
     @media (max-width: 480px) and (min-width: 400px) {
       width: 5vw;
-      margin-left: -260px;
+      margin-left: -258px;
+      font-weight: 500;
+      font-size: 10px;
     }
 
     @media (max-width: 600px) and (min-width: 500px) {
       width: 5vw;
-      margin-left: -330px;
+      margin-left: -250px;
     }
 
     @media (max-width: 800px) and (min-width: 601px) {
@@ -87,10 +100,27 @@ body {
 }
 .header {
   position: relative;
-  height: 220px;
+  height: 230px;
+  width: 100vw;
   background-image: linear-gradient(#ff9d2f, #ff6126);
-}
 
+  .header-title {
+    padding: 100px 0;
+    font: 40px 'Anton';
+    text-align: center;
+    margin-left: 30px;
+
+    @media (max-width: 480px) and (min-width: 400px) {
+      margin-left: 0px;
+      font-size: 28px;
+    }
+
+    @media (max-width: 360px) and (min-width: 300px) {
+      margin-left: 0px;
+      font-size: 28px;
+    }
+  }
+}
 .blogsecondarytitles {
   display: flex;
   justify-content: center;
@@ -107,8 +137,12 @@ body {
   @media (max-width: 600px) {
     display: flex;
     justify-content: center;
-
     width: 5vw;
+
+    @media (max-width: 480px) and (min-width: 400px) {
+      margin-left: -10px;
+      font-size: 28px;
+    }
   }
 }
 
@@ -124,10 +158,10 @@ body {
   text-transform: capitalize;
   text-decoration: underline #272727;
   margin-top: 150px;
+
   @media (max-width: 600px) {
     display: flex;
     justify-content: center;
-
     width: 5vw;
     margin-left: -375px;
   }
@@ -158,6 +192,11 @@ body {
     @media (max-width: 360px) and (min-width: 321px) {
       margin-left: -345px;
     }
+    @media (max-width: 600px) and (min-width: 550px) {
+      right: 35px;
+      bottom: 15px;
+      margin-left: -370px;
+    }
   }
 
   .blog-link {
@@ -172,11 +211,15 @@ body {
     }
 
     @media (max-width: 480px) and (min-width: 400px) {
-      margin-left: -275px;
+      margin-left: -270px;
     }
 
     @media (max-width: 360px) and (min-width: 321px) {
       margin-left: -345px;
+    }
+
+    @media (max-width: 600px) and (min-width: 550px) {
+      margin-left: -255px;
     }
 
     &:hover {
@@ -193,7 +236,7 @@ body {
     margin-left: 15px;
 
     @media (max-width: 600px) {
-      width: 5vw;
+      width: 6vw;
       margin-left: -375px;
     }
 
@@ -205,6 +248,7 @@ body {
       @media (max-width: 600px) {
         width: 5vw;
         margin-left: -375px;
+        height: 20px;
       }
 
       &:hover {
