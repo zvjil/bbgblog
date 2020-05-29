@@ -6,6 +6,10 @@
   border-radius: 15px;
   border-color: #14a76c;
 
+  @media (max-width: 600px) and (min-width: 550px) {
+    margin-left: -15px;
+  }
+
   @media (max-width: 480px) and (min-width: 400px) {
     margin-left: -10px;
   }

@@ -24,6 +24,22 @@ body {
     @media (max-width: 480px) and (min-width: 400px) {
       width: 140vw;
     }
+
+    @media (max-width: 558px) and (min-width: 548px) {
+      width: 120vw;
+    }
+
+    @media (max-width: 525px) and (min-width: 520px) {
+      width: 125vw;
+    }
+
+    @media (max-width: 519px) and (min-width: 515px) {
+      width: 130vw;
+    }
+
+    @media (max-width: 506px) and (min-width: 495px) {
+      width: 135vw;
+    }
   }
 
   .header-title {
@@ -34,6 +50,11 @@ body {
 
     @media screen and (max-width: 500px) {
       margin-left: 30vw;
+    }
+
+    @media (max-width: 800px) and (min-width: 790) {
+      margin-left: 0px;
+      font-size: 32px;
     }
 
     @media screen and (max-width: 600px) {
@@ -103,7 +124,17 @@ body {
         width: 80vw;
       }
     }
+
+    @media (max-width: 558px) and (min-width: 548px) {
+      .svg-lg {
+        width: 80vw;
+      }
+      .svg-sm {
+        width: 80vw;
+      }
+    }
   }
+
   @media (max-width: 699px) {
     .svg--lg {
       // display: none;
