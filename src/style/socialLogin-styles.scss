@@ -404,6 +404,12 @@
   -o-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
 
+  @media (max-width: 750px) and (min-width: 741px) {
+    margin-left: 230px;
+    margin-top: 35px;
+    width: 35vw;
+  }
+
   @media (max-width: 1601px) and (min-width: 1590px) {
     margin-left: 620px;
     margin-top: 35px;
@@ -638,6 +644,24 @@ img:hover {
     padding: 0;
     margin-left: 520px;
     width: 20vw;
+  }
+
+  @media (max-width: 750px) and (min-width: 741px) {
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #4c69ba;
+    border: calc(0.06887vw + 0.67769px) solid #4c69ba;
+    padding: 0;
+    margin-left: 245px;
+    width: 30vw;
   }
 
   @media (max-width: 509px) and (min-width: 500px) {
@@ -1050,6 +1074,13 @@ img:hover {
     font-weight: 900;
     margin-bottom: 20px;
     width: 20vw;
+  }
+
+  @media (max-width: 750px) and (min-width: 741px) {
+    margin-left: 260px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    width: 70vw;
   }
 
   @media (max-width: 509px) and (min-width: 500px) {
